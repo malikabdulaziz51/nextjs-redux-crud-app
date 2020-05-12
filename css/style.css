@@ -1,0 +1,285 @@
+a:hover {
+	text-decoration: none !important;
+}
+
+h1 {
+	text-align: center;
+}
+
+.wrapper {
+	padding: 0 auto;
+	position: relative;
+	margin: 10px auto;
+}
+
+.wrapper i {
+	position: absolute;
+	font-size: 2em !important;
+	margin-top: 50px;
+	left: 50%;
+}
+
+.navbar {
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #008cba;
+	color: #ffff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar .create {
+	color: #ffff;
+	font-size: 1.5rem;
+}
+
+.navbar .navbar-brand {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.navbar-brand:hover,
+.create:hover {
+	color: #ffff;
+}
+
+.ui.card:last-child {
+	margin-left: 20px;
+}
+
+.card img {
+	width: 100%;
+}
+
+.form-container {
+	width: 400px;
+	margin: 20px auto;
+}
+
+.edit-button {
+	position: absolute;
+	width: 50px !important;
+	top: 5px;
+	right: 5px;
+	background: rgba(255, 255, 255, 0) !important;
+}
+
+.edit-button i {
+	font-size: 1.4em !important;
+}
+
+.product-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+.product-screen {
+	flex: 1;
+	display: flex;
+	margin: 4% 50px;
+}
+
+.photo-section {
+	width: 50%;
+	padding-left: 5%;
+}
+
+.information-section {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.detail-section {
+	flex: 0.3 1;
+	display: flex;
+}
+
+.detail-section.name h1 {
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.price,
+.product-information {
+	padding-top: 10px;
+	border-top: 1px solid rgb(229, 231, 233);
+}
+
+.detail-section .title {
+	display: inline-block;
+	text-transform: uppercase;
+	vertical-align: top;
+	width: 70px;
+}
+
+.detail-section .title p {
+	display: block;
+	position: relative;
+	font-weight: 700;
+	font-size: 0.857143rem;
+	line-height: 18px;
+	color: rgba(49, 53, 59, 0.32);
+	text-decoration: initial;
+	margin: 0px;
+	padding-top: 30%;
+}
+
+.detail-section .content {
+	display: inline-block;
+	vertical-align: top;
+	width: 624px;
+	padding-left: 20px;
+	margin: 0px;
+}
+
+.detail-section .content h3 {
+	color: rgb(250, 89, 29);
+	line-height: 30px;
+	font-size: 24px;
+	font-weight: 700;
+	padding-left: 50px;
+	margin: 0px;
+	padding-top: 2%;
+}
+
+.detail-section .content p {
+	color: rgba(49, 53, 59, 0.7);
+	padding-left: 50px;
+	margin: 0px;
+	padding-top: 3%;
+}
+
+.detail-section .delete {
+	margin-top: 50px;
+	width: 100%;
+}
+
+.detail-section .delete button {
+	width: 100%;
+}
+
+.ui .modal {
+	position: absolute;
+	height: 120px;
+	font-weight: 600;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1000px) {
+	.product-screen {
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+
+	.photo-section {
+		margin: 0 auto;
+	}
+
+	.information-section {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 800px) {
+	.product-screen {
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+
+	.photo-section {
+		margin: 0 auto;
+	}
+
+	.photo-section img {
+		width: 100%;
+	}
+
+	.information-section {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 650px) {
+	.product-screen {
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+	}
+
+	.photo-section {
+		margin: 0 auto;
+	}
+
+	.ui.card:last-child {
+		margin: 0 auto;
+	}
+
+	.navbar .navbar-brand {
+		font-size: 1.5em;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 10px;
+	}
+
+	.photo-section img {
+		width: 100%;
+	}
+
+	.detail-section {
+		display: inline-block;
+		text-align: center;
+	}
+
+	.detail-section .content {
+		padding: 0px;
+		width: 100%;
+	}
+
+	.detail-section.name h1 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.detail-section .content h3 {
+		font-size: 18px;
+		padding: 0px;
+	}
+
+	.detail-section .content p {
+		padding-left: 0px;
+	}
+
+	.detail-section .title p {
+		font-size: 0.7rem;
+	}
+
+	.information-section {
+		margin: 0 auto;
+	}
+}
